@@ -32,8 +32,13 @@ ul{
 .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center;  
+}
+/*Première règle de média*/
+@media screen and (max-width: 576px){
+    .flex-container{
+        flex-direction: column;
+    }
 }
 header nav ul li{
     width: 10;
@@ -136,3 +141,4 @@ footer.bg-dark ul, footer.bg-light ul{
 span[class^="icon-"]{
     margin-right: 0.3em;
 }
+
