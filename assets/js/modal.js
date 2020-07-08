@@ -11,3 +11,8 @@ function openModal(){
     //raccrocher le contenu à l'élément "body" du document HTML
     document.body.appendChild(templateContent)
 }
+function closeModal(){
+    console.log('je dois fermer la modale')
+    const modal = document.getElementsByClassName('outer-modal')[0]
+    document.body.removeChild(modal)
+}
