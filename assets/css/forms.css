@@ -1,0 +1,25 @@
+/**
+*Design field and form
+**/
+.required::after{
+    content: "*";
+    color: red;
+}
+/**
+*input design
+**/
+input{
+    border-radius:0.3em;
+    padding:.5em;
+    border: solid 1px rgb(128,128,128); 
+}
+#send-btn{
+    border-radius:0.3em;
+    background-color:var(--success);
+    color:var(--light);
+    padding:0.5em;
+    border: none;
+}
+#send-btn:hover{
+    background-color:#19642a;
+}

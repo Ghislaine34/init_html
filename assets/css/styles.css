@@ -13,6 +13,7 @@
     --dark: #343a40;
     --light: #ffffff;
 }
+
 /*
 *Global styles
 * CSS Rule : selector{property:property_value;}
@@ -40,7 +41,7 @@ ul{
 }
 /*Première règle de média*/
 @media screen and (max-width: 576px){
-    .flex-container{
+    header nav ul.flex-container{
         flex-direction: column;
         display: none;
     }
