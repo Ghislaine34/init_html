@@ -146,4 +146,23 @@ footer.bg-dark ul, footer.bg-light ul{
 span[class^="icon-"]{
     margin-right: 0.3em;
 }
-
+/**
+*Modal design
+**/
+.outer-modal{
+    position: fixed;/**C'est moi qui decide de l'endroit où lacer l'élément**/
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128,128,128,0.6);
+}
+.inner-modal{
+    position: relative;
+    background-color: var(--light);
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
