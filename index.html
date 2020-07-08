@@ -42,7 +42,7 @@
                     <li><a class="btn bg-dark shadowed" href="#" title="CSS"><span class="icon-css3"></span>CSS</a></li>
                     <!--Lien de type téléphone/!\ never this way(jamais sous cette forme la)-->
                     <li><a class="btn bg-dark shadowed" href="tel:0466554433" title="tel">Appelez-nous</a></li>
-                    <li><a class="btn bg-dark shadowed" href="mailto:toto@tartempion.com" title="email">Mail</a></li>
+                    <li><a class="btn bg-dark shadowed" href="#" title="send an email" onclick="openModal()">Mail</a></li>
                 </ul>
             </nav>
         </header>
@@ -85,7 +85,7 @@
             </ul>
         </footer>
         <!--Template pour l'affichage du formulaire de contact-->
-        <!--<template id="form-template">-->
+        <template id="form-template">
             <!--form c'est un ensemble de champs(ou contrôles de formulaire)-->
             <div class="outer-modal">
                 <div class="inner-modal">
@@ -107,7 +107,8 @@
                     </form>
                 </div>
             </div>
-        <!--</template>-->
+        </template>
         <!--fin du template pour l'affichage du formulaire de contact-->
+        <script src="assets/js/modal.js"></script>
     </body>
 </html><!-- fin du documents-->
