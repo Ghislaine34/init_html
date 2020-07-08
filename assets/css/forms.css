@@ -13,13 +13,13 @@ input,textarea{
     padding:.5em;
     border: solid 1px rgb(128,128,128); 
 }
-button[type="submit"]{
+button{
     border-radius:0.3em;
     background-color:var(--success);
     color:var(--light);
     padding:0.5em;
     border: none;
 }
-button[type="submit"]:hover{
+button:hover{
     background-color:#19642a;
 }
