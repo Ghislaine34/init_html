@@ -40,7 +40,7 @@ ul{
 }
 /*Première règle de média*/
 @media screen and (max-width: 576px){
-    header nav ul.flex-container{
+    .flex-container{
         flex-direction: column;
         display: none;
     }
