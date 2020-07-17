@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <!-- Element head : instructions envoyées au navigateur-->
-    <head>
-        <meta charset="utf-8">
-        <!-- Définition des règles de media-->
-        <meta name="viewport" content="width=device-width,initial-scale=2.0,maximum-scale=2.0,user-scalable=no">
-        <title>Découvrir le HTML</title>
-        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="./assets/css/styles.css" rel="stylesheet">
-        
-        <!--lien design form-->
-        <link href="./assets/css/forms.css" rel="stylesheet">
-        <!--Load icomoon styles-->
-        <link href="./assets/css/style.css" rel="stylesheet">
-       
-    </head>
-    <!-- 
+<!-- Element head : instructions envoyées au navigateur-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Définition des règles de media-->
+    <meta name="viewport" content="width=device-width,initial-scale=2.0,maximum-scale=2.0,user-scalable=no">
+    <title>Découvrir le HTML</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+
+    <!--lien design form-->
+    <link href="./assets/css/forms.css" rel="stylesheet">
+    <!--Load icomoon styles-->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+<!-- 
         Element body: contenu visible dans la fenêtre du navigateur
         Le contenu sera traité et affiché par le navigateur
     -->
-    <body>
+
+<body>
+    <div class="container">
         <header class="row">
             <h1 class="col-xl-8 col-12">Découvrir le HTML</h1>
             <p class="col-xl-4 col-12">
                 L'histoire du <abbr title="Hyper Text Markup Language" class="dropdown">HTML</abbr> à travers les âges.
                 <!--abbr avec l'attirbut title pour donner la signification
-                de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language-->
+                    de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language-->
             </p>
-            <nav class="col-xl-12 col-12 bg-dark"><!--Element qui regroupe des  alises de navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!--Element qui regroupe des balises de navigation-->
                 <!--Burger menu button : displayed only when device width <= 576px-->
-                <button id="burger-btn">
-                    ---<br>
-                    ---<br>
-                    ---<br>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!--menu do not displayed if device width <= 576px-->
-                <ul class="flex-container"><!--Conteneur de liste nn ordonné ; ol = conteneur de liste ordonné-->
-                    <!--Lien interne vers une section-->
-                    <li><a class="btn bg-dark shadowed" href="index.html" title="Accueil"><span class="icon-home3"></span>Accueil</a></li>
-                    <li><a class="btn bg-dark shadowed" href="section-html.html" title="HTML la référence"><span class="icon-html-five"></span>HTML</a></li>
-                    <li><a class="btn bg-dark shadowed" href="#" title="CSS"><span class="icon-css3"></span>CSS</a></li>
-                    <!--Lien de type téléphone/!\ never this way(jamais sous cette forme la)-->
-                    <li><a class="btn bg-dark shadowed" href="tel:0466554433" title="tel">Appelez-nous</a></li>
-                    <li><a class="btn bg-dark shadowed" href="#" title="send an email" onclick="openModal()">Mail</a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <!--Conteneur de liste nn ordonné ; ol = conteneur de liste ordonné-->
+                        <!--Lien interne vers une section-->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" title="Accueil"><span class="icon-home3"></span>Accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="section-html.html" title="HTML la référence"><span class="icon-html-five"></span>HTML</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" title=""><span class="icon-css3"></span>CSS</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" title="tel">Appelez-nous</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" title="send an email" onclick="openModal()">Mail</a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </nav>
         </header>
-        <main class="row"><!--Définie le contenu principal d'une page / unique dans un document-->
-            <section id="section-html" class="col-xl-6 col-12"><!--regroupement pour une thématique donnée-->
+        <main class="row">
+            <!--Définie le contenu principal d'une page / unique dans un document-->
+            <section id="section-html" class="col-xl-6 col-12">
+                <!--regroupement pour une thématique donnée-->
                 <header>
                     <h2>Le langage HTML</h2>
                     <p>
@@ -58,17 +76,19 @@
                     <a class="btn bg-dark shadowed" href="section-html.html" title="section-html">En savoir plus...</a>
                 </header>
 
-            <article>
-                <header>
-                    <h3>Deux familles de balises HTML</h3>
-                </header>
-                <p>
-                    Les balises bloc définissent un rectangle occupant la totalité de la largeur disponible dans le navigateur.
-                </p>
-                    <cite title="w3c.org"><!--Citer une source-->
-                        <a href="https://www.w3.org" title="W3C" target ="_new">Bloc tags</a>
+                <article>
+                    <header>
+                        <h3>Deux familles de balises HTML</h3>
+                    </header>
+                    <p>
+                        Les balises bloc définissent un rectangle occupant la totalité de la largeur disponible dans le
+                        navigateur.
+                    </p>
+                    <cite title="w3c.org">
+                        <!--Citer une source-->
+                        <a href="https://www.w3.org" title="W3C" target="_new">Bloc tags</a>
                     </cite>
-            </article>
+                </article>
 
             </section>
             <section id="section-css" class="col-xl-6 col-12">
@@ -76,41 +96,51 @@
                 <p>Le <strong>langage CSS</strong> est responsable de la forme des contenus.</p>
             </section>
         </main>
-        <footer class="bg-dark"><!--pied de page ou section ou autre-->
+        <footer class="bg-dark">
+            <!--pied de page ou section ou autre-->
             <h3>Nos réseaux sociaux</h3>
             <ul>
-                <li><a href="https://facebook.com" target="_new" title="Follow Us"><span class="icon-facebook2"></span> Facebook</a></li>
-                <li><a href="https://twitter.com" target="_new" title="Follow Us"><span class="icon-twitter"></span> Twitter</a></li>
-                <li><a href="https://linkedin.com" target="_new" title="Follow Us"><span class="icon-linkedin"></span> Linkedin</a></li>
-                        
+                <li><a href="https://facebook.com" target="_new" title="Follow Us"><span class="icon-facebook2"></span>
+                        Facebook</a></li>
+                <li><a href="https://twitter.com" target="_new" title="Follow Us"><span class="icon-twitter"></span>
+                        Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_new" title="Follow Us"><span class="icon-linkedin"></span>
+                        Linkedin</a></li>
+
             </ul>
         </footer>
-        <!--Template pour l'affichage du formulaire de contact-->
-        <template id="form-template">
-            <!--form c'est un ensemble de champs(ou contrôles de formulaire)-->
-            <div class="outer-modal">
-                <div class="inner-modal">
-                    <h2>Contactez le service client</h2>
-                    <form>
-                        <div>
-                            <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom...">
-                        </div>
-                        <div class="required">
-                            <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email..." required>
-                        </div>
-                        <div>
-                            <label class="required">Objet de votre demande :</label><br>
-                            <textarea name="object-ctrl" id="object-ctrl"></textarea>
-                        </div>
-                        <div>
-                            <button id="send-btn" type="submit" onclick="SendAndClose()">Envoyer</button>
-                            <button id="close-btn" type="button" onclick="closeModal()">Annuler</button>
-                        </div>
-                    </form>
-                </div>
+    </div><!--End of bootstrap container-->
+    
+    <!--Template pour l'affichage du formulaire de contact-->
+    <template id="form-template">
+        <!--form c'est un ensemble de champs(ou contrôles de formulaire)-->
+        <div class="outer-modal">
+            <div class="inner-modal">
+                <h2>Contactez le service client</h2>
+                <form>
+                    <div>
+                        <input type="text" name="name-ctrl" id="name-ctrl" placeholder="Votre nom...">
+                    </div>
+                    <div class="required">
+                        <input type="email" name="email-ctrl" id="email-ctrl" placeholder="Votre email..." required>
+                    </div>
+                    <div>
+                        <label class="required">Objet de votre demande :</label><br>
+                        <textarea name="object-ctrl" id="object-ctrl"></textarea>
+                    </div>
+                    <div>
+                        <button id="send-btn" type="submit" onclick="SendAndClose()">Envoyer</button>
+                        <button id="close-btn" type="button" onclick="closeModal()">Annuler</button>
+                    </div>
+                </form>
             </div>
-        </template>
-        <!--fin du template pour l'affichage du formulaire de contact-->
-        <script src="assets/js/modal.js"></script>
-    </body>
+        </div>
+    </template>
+    <!--fin du template pour l'affichage du formulaire de contact-->
+    <!--Intégration des scripts JS nécéssaires au fonctionnement correct de Bootstrap-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="assets/js/modal.js"></script>
+</body>
+
 </html><!-- fin du documents-->
