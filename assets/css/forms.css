@@ -23,3 +23,6 @@ form div button{
 form div button:hover{
     background-color:#19642a;
 }
+form div button#close-btn{
+    background-color: var(--secondary);
+}
