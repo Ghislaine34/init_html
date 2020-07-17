@@ -167,6 +167,6 @@ span[class^="icon-"]{
     top: 50%;
     transform: translateY(-50%);
 }
-nav.navbar{
-    background-color: var(--secondary) !important;
+nav.bg-dark{
+    background-color: var(--secondary)!important;
 }
