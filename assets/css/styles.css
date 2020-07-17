@@ -59,6 +59,7 @@ header nav ul li{
 */
 nav {
     color:var(--dark);
+    background-color: var(--secondary);
 }
 nav ul li a{ 
     transform: rotate(0deg);
@@ -165,4 +166,7 @@ span[class^="icon-"]{
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
+}
+nav.navbar{
+    background-color: var(--secondary) !important;
 }

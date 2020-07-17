@@ -30,7 +30,7 @@
                 <!--abbr avec l'attirbut title pour donner la signification
                     de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language-->
             </p>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
                 <!--Element qui regroupe des balises de navigation-->
                 <!--Burger menu button : displayed only when device width <= 576px-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,13 +52,15 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#" title=""><span class="icon-css3"></span>CSS</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" title="tel">Appelez-nous</a>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Contact
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#" title="tel">Appelez-nous</a>
+                              <a class="dropdown-item" href="#" title="send an email" onclick="openModal()">Mail</a>
+                            </div>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" title="send an email" onclick="openModal()">Mail</a>
-                        </li>
-                        
                     </ul>
                 </div>
             </nav>
@@ -139,8 +141,9 @@
     <!--fin du template pour l'affichage du formulaire de contact-->
     <!--Intégration des scripts JS nécéssaires au fonctionnement correct de Bootstrap-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="assets/js/modal.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html><!-- fin du documents-->
