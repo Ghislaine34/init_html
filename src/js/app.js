@@ -1,4 +1,7 @@
 import * as $ from 'jquery'
+
+import './../scss/main.scss'
+
 /**
  * @name App
  * @author Adrar - Juil. 2020
